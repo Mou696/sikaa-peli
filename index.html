@@ -1,49 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sikaa peli</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <!---main start---->
-    <main class="game-container">
-        <!---player one start---->
-        <section class="player player_0 player_active">
-            <h2 class="name" id="name_0">Player 1</h2>
-            <p class="score" id="score_0">43</p>
-            <div class="current">
-                <p class="current_label">Current</p>
-                <p class="current_score" id="current_0">0</p>
-            </div>
-        </section>
-        <!----player one close--->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pig Game</title>
+  </head>
+  <body>
+    <main>
+      <section class="player player--0 player--active">
+        <h2 class="name" id="name--0">Player 1</h2>
+        <p class="score" id="score--0">43</p>
+        <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="current--0">0</p>
+        </div>
+      </section>
+      <section class="player player--1">
+        <h2 class="name" id="name--1">Player 2</h2>
+        <p class="score" id="score--1">24</p>
+        <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="current--1">0</p>
+        </div>
+      </section>
 
-        <!----player two start---->
-        <section class="player player_1">
-            <h2 class="name" id="name_1">Player 2</h2>
-            <p class="score" id="score_1">43</p>
-            <div class="current">
-                <p class="current_label">Current</p>
-                <p class="current_score" id="current_1">0</p>
-            </div>
-        </section>
-        <!----second player close---->
-
-        <!---dice start--->
-        <img src="./img/dice-1.jpg" alt="Playing dice" class="dice" />
-        <!---close--->
-    </main> 
-    <!---main close--->
-
-    <!---buttons container--->
-    <div class="btn-container">
-        <button class="btn btn_new">New Game</button>
-        <button class="btn btn_roll">Roll Dice</button>
-        <button class="btn btn_hold">Hold</button>
-    </div>
-
-    <script src="index.js"></script>
-</body>
+      <img src="dice-5.png" alt="Playing dice" class="dice" />
+      <button class="btn btn--new">🔄 New game</button>
+      <button class="btn btn--roll">🎲 Roll dice</button>
+      <button class="btn btn--hold">📥 Hold</button>
+    </main>
+    <script defer src="script.js"></script>
+  </body>
 </html>
